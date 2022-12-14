@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #222;
+  --text-color: #555;
+}
+
+body {
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ------------------------------ */
+/* ---------- HEADER ------------ */
+/* ------------------------------ */
+
+nav {
+  min-height: 150px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--primary-color);
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  border-bottom-color: #000;
+  color: #000;
+}
+
+.nav-link-active {
+  border-bottom-color: #000;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-btn-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.nav-button {
+  padding: 8px 30px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.nav-button:hover {
+  box-shadow: 0 0 40px 40px #000 inset;
+  color: #fff;
+}
+
+/* ---------------------------- */
+/* ---------- HERO ------------ */
+/* ---------------------------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 48px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.square {
+  position: absolute;
+  width: 340px;
+  bottom: 0;
+  left: 13%;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.globe {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 70px;
+}
+
+.star-2 {
+  position: absolute;
+  right: 50%;
+  bottom: 40px;
+  width: 60px;
+}
+
+.hero img {
+  width: 85%;
+}
+
+.hero-textbox {
+  text-align: center;
+}
+
+.hero-heading {
+  color: #000;
+  font-family: "Orbitron", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 70px 0 50px;
+}
+
+.hero-description {
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 70px;
+}
+
+.hero-textbox button {
+  padding: 6px 24px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.button-email {
+  background-color: #fff;
+  color: #000;
+  margin-right: 10px;
+}
+
+.button-email:hover {
+  box-shadow: 0 0 40px 40px #000 inset;
+  color: #fff;
+}
+
+.button-join {
+  background-color: #000;
+  color: #fff;
+}
+
+.button-join:hover {
+  box-shadow: 0 0 40px 40px #fff inset;
+  color: #000;
+}
+
+.contact-heading {
+  margin: 60px 0 20px;
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img {
+  width: 30px;
+  cursor: pointer;
+}
